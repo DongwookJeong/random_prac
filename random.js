@@ -1,24 +1,32 @@
 import elementMk from "./randomElem.js";
-// const prac = Math.random(1, 10);
-// console.log(prac);
 
-// function rrr(min, max) {
-//   return Math.random()*(max-min)+min;
-// }
+const root = document.getElementById("root");
+const div = elementMk("div", ran(1, 10));
+root.innerHTML = div;
+/*
+? 연습 과정 일부
+const prac = Math.random(1, 10);
+console.log(prac);
+
+function rrr(min, max) {
+  return Math.random()*(max-min)+min;
+}
+*/
 
 function ran(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
   return `${Math.floor(Math.random() * (max - min + 1)) + min}이 나타났습니다.`;
 }
-// console.log(ran(1, 10));
 
-let randomTag = ran(1, 10);
+let randomTag = ran();
 console.log(randomTag);
-const root = document.getElementById("root");
-const div = elementMk("div", ran(1, 10));
-root.innerHTML = div;
 
+function swichColor(randomTag) {
+  return ;
+}
+
+// ! 실행되지 않은 것들
 // const root = document
 //   .getElementById("root")
 //   .addEventListener("click", function ran(min, max) {
